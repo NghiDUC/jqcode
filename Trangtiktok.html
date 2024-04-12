@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- iconx -->
+    <link rel="icon" href="anhimg/--" type="image/x-icon" />
+    <title>tiktok</title>
+    <link rel="stylesheet" href="css/tiktok.css" />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <!-- jquerycdn -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- tailwindcss -->
+  </head>
+  <body>
+    <script>
+      $(document).ready(function () {
+        $(".suggested__btn").click(function () {
+          $(".suggested__container").toggle();
+
+          if ($(".suggested__container").css("display") == "none") {
+            $(".suggested__btn").text("Hiện thêm");
+          } else {
+            $(".suggested__btn").text("Ẩn");
+          }
+        });
+
+        // $(".suggested__btn2").click(function () {
+        //   $(".suggested__btn2").hide();
+        //   $(".suggested__btn").show();
+        // });
+
+        // y3fnKkTr49t4j password
+      });
+    </script>
+    <!-- navbar -->
+    <nav>
+      <div class="nav__content">
+        <h1 class="logo">
+          <i class="fab fa-tiktok"></i>
+          Tiktok
+        </h1>
+        <form>
+          <input
+            type="text"
+            placeholder="Search"
+            id="search__field"
+            placeholder="Search Accounts"
+          />
+          <i class="fas fa-search"></i>
+        </form>
+        <div class="nav__btns">
+          <button class="upload__btn">
+            <i class="fa-solid fa-plus"></i>
+            Tải Lên
+          </button>
+          <button class="login__btn">Đăng Nhập</button>
+          <!-- <button class="register__btn">Register</button> -->
+
+          <div class="dots__btn">
+            <i class="fas fa-ellipsis-v"></i>
+            <div class="dots__info">
+              <a href="#">
+                <i class="fa-regular fa-lightbulb"></i>
+                Trung tâm nhà sáng tạo LIVE
+              </a>
+              <a href="#">
+                <i class="fas fa-font"></i>
+                Tiếng Việt(VN)
+              </a>
+              <!-- <a href="#">
+                <i class="fas fa-from"></i>
+                Settings
+              </a> -->
+              <a href="#">
+                <i class="fa-solid fa-question"></i>
+                Phản hồi trợ giúp
+              </a>
+              <a href="#">
+                <i class="fa-regular fa-keyboard"></i>
+                Keyboard Shortcuts
+              </a>
+
+              <a href="#">
+                <i class="fas fa-frown"></i>
+                Feadback
+              </a>
+
+              <a href="#">
+                <i class="fa-regular fa-moon"></i>
+                Chế độ tối
+
+                <i
+                  id="btn2"
+                  class="fa-solid fa-toggle-off fa-2xs"
+                  style="color: #f7e28d"
+                ></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- navbar end -->
+    <!-- Main -->
+    <div class="tongthe">
+      <!-- Menu been trai -->
+      <div class="sidabar">
+        <div class="menu">
+          <a href="#" class="menu__link" id="heh">
+            <i class="fas fa-home"></i>
+            <p>Dành Cho Bạn</p>
+          </a>
+
+          <a href="#" class="menu__link" id="heh">
+            <i class="fas fa-user-friends"></i>
+            <p>Đang Following</p>
+          </a>
+          <a href="#" class="menu__link" id="heh">
+            <i class="fas fa-user-friends"></i>
+            <p>Bạn Bè</p>
+          </a>
+
+          <a href="#" class="menu__link" id="heh">
+            <i class="fa-regular fa-compass"></i>
+            <p>Khám Phá</p>
+            <div class="new">Mới</div>
+          </a>
+          <a href="#" class="menu__link" id="heh">
+            <i class="fas fa-video"></i>
+            <p>LIVE</p>
+          </a>
+
+          <a href="#" class="menu__link" id="heh">
+            <i class="fa-regular fa-user"></i>
+            <p>Hồ Sơ</p>
+          </a>
+        </div>
+
+        <div class="login__area">
+          <p>Đăng nhập để follow các tác giả, thích video và xem bình luận.</p>
+          <button class="main__login">Login</button>
+        </div>
+        <div class="suggested">
+          <h3>Tài khoản</h3>
+          <div class="info1">
+            <!-- nguoidung -->
+            <a href="#" class="suggestion">
+              <!-- anhavata -->
+              <div
+                class="suggested__pic"
+                style="background-image: url(anhimg/anhtiktok/photo-4.jpg)"
+              ></div>
+              <div class="suggested__info">
+                <h3>nguoidung1</h3>
+                <small>ddautien</small>
+              </div>
+            </a>
+          </div>
+          <!-- end nguoidung -->
+          <div class="suggested__container">
+            <!-- nguoidung -->
+            <a href="#" class="suggestion">
+              <!-- anhavata -->
+              <div
+                class="suggested__pic"
+                style="background-image: url(anhimg/anhtiktok/photo-4.jpg)"
+              ></div>
+              <div class="suggested__info">
+                <h3>nguoidung2</h3>
+                <small>ddautien</small>
+              </div>
+            </a>
+            <!-- end nguoidung -->
+
+            <!-- nguoidung -->
+            <a href="#" class="suggestion">
+              <!-- anhavata -->
+              <div
+                class="suggested__pic"
+                style="background-image: url(anhimg/anhtiktok/photo-4.jpg)"
+              ></div>
+              <div class="suggested__info">
+                <h3>nguoidung3</h3>
+                <small>ddautien</small>
+              </div>
+            </a>
+            <!-- end nguoidung -->
+
+            <!-- nguoidung -->
+            <a href="#" class="suggestion">
+              <!-- anhavata -->
+              <div
+                class="suggested__pic"
+                style="background-image: url(anhimg/anhtiktok/photo-4.jpg)"
+              ></div>
+              <div class="suggested__info">
+                <h3>nguoidung4</h3>
+                <small>ddautien</small>
+              </div>
+            </a>
+            <!-- end nguoidung -->
+            <!-- nguoidung -->
+            <a href="#" class="suggestion">
+              <!-- anhavata -->
+              <div
+                class="suggested__pic"
+                style="background-image: url(anhimg/anhtiktok/photo-4.jpg)"
+              ></div>
+              <div class="suggested__info">
+                <h3>nguoidung5</h3>
+                <small>ddautien</small>
+              </div>
+            </a>
+            <!-- end nguoidung -->
+            <!-- nguoidung -->
+            <a href="#" class="suggestion">
+              <!-- anhavata -->
+              <div
+                class="suggested__pic"
+                style="background-image: url(anhimg/anhtiktok/photo-4.jpg)"
+              ></div>
+              <div class="suggested__info">
+                <h3>nguoidung6</h3>
+                <small>ddautien</small>
+              </div>
+            </a>
+            <!-- end nguoidung -->
+            <!-- nguoidung -->
+            <a href="#" class="suggestion">
+              <!-- anhavata -->
+              <div
+                class="suggested__pic"
+                style="background-image: url(anhimg/anhtiktok/photo-4.jpg)"
+              ></div>
+              <div class="suggested__info">
+                <h3>nguoidung7</h3>
+                <small>ddautien</small>
+              </div>
+            </a>
+            <!-- end nguoidung -->
+            <!-- nguoidung -->
+            <a href="#" class="suggestion">
+              <!-- anhavata -->
+              <div
+                class="suggested__pic"
+                style="background-image: url(anhimg/anhtiktok/photo-4.jpg)"
+              ></div>
+              <div class="suggested__info">
+                <h3>nguoidung8</h3>
+                <small>ddautien</small>
+              </div>
+            </a>
+            <!-- end nguoidung -->
+            <!-- nguoidung -->
+            <a href="#" class="suggestion">
+              <!-- anhavata -->
+              <div
+                class="suggested__pic"
+                style="background-image: url(anhimg/anhtiktok/photo-4.jpg)"
+              ></div>
+              <div class="suggested__info">
+                <h3>nguoidung9</h3>
+                <small>ddautien</small>
+              </div>
+            </a>
+            <!-- end nguoidung -->
+          </div>
+          <button class="suggested__btn">Hiện thêm</button>
+          <!-- <button class="suggested__btn2">Ẩn Đi</button> -->
+
+          <div class="dongtext">
+            <h4>Công ty</h4>
+            <div class="containertext">
+              <a href="#">Giới Thiệu</a>
+              <a href="#">Bảng tin</a>
+              <a href="#">Liên hệ</a>
+              <a href="#">Sự Nghiêp</a>
+            </div>
+
+            <h4>Chương trình</h4>
+            <div class="containertext">
+              <a href="#">TikTok for Good</a>
+              <a href="#">Quảng cáo</a>
+              <a href="#">TikTok LIVE Creator Networks</a>
+              <a href="#">Developers</a>
+              <a href="#">Phần thưởng trên TikTok</a>
+              <a href="#">TikTok Embeds</a>
+            </div>
+
+            <h4>Điều khoảng và chính sách</h4>
+            <div class="containertext">
+              <a href="#">Trợ giúp</a>
+              <a href="#">An toàn</a>
+              <a href="#">Điều khoản</a>
+              <a href="#">Trung tâm quyền riêng tư</a>
+              <a href="#">Chính sách bảo mật</a>
+              <a href="#">Trung tâm quyền riêng tư</a>
+              <a href="#">Cổng thông tin Tác giả</a>
+              <a href="#">Hướng dẫn Cộng đồng</a>
+            </div>
+
+            <h4></h4>
+            <!-- <div class="more1">
+              <h2>Luatphap hover</h2>
+            </div> -->
+            <div class="containertext">
+              <a href="#">Thêm...</a>
+            </div>
+          </div>
+          <div class="discover">
+            <h3>Discover</h3>
+            <div class="discover__container">
+              <a href="#" class="recommed">
+                <i class="fas fa-hashtag"></i>
+                animallover
+              </a>
+
+              <a href="#" class="recommed">
+                <i class="fas fa-hashtag"></i>
+                putmefirst
+              </a>
+
+              <a href="#" class="recommed">
+                <i class="fas fa-hashtag"></i>
+                gymtok
+              </a>
+
+              <a href="#" class="recommed">
+                <i class="fas fa-music"></i>
+                Stay- The kid Laroi
+              </a>
+
+              <a href="#" class="recommed">
+                <i class="fas fa-music"></i>
+                Sacrifice - The Weeknd
+              </a>
+
+              <a href="#" class="recommed">
+                <i class="fas fa-hashtag"></i>
+                gymtok
+              </a>
+
+              <a href="#" class="recommed">
+                <i class="fas fa-music"></i>
+                Cold Heart - Elton John, Dua Lipa
+              </a>
+            </div>
+          </div>
+          <span class="end1"> © 2024 nghilamtheo(TikTok)</span>
+        </div>
+      </div>
+      <!-- end menu trai -->
+      <!-- Rong ben phai  -->
+      <div class="feed">
+        <div class="post">
+          <div class="post__top">
+            <div
+              class="post__pic"
+              style="background-image: url(anhimg/anhtiktok/photo-1.jpg)"
+            ></div>
+            <div class="post__info">
+              <h2>nguoidung1 <small>ddautien</small></h2>
+              <p>
+                Cam on ban da ho tro .
+                <a href="#" class="recommed2">
+                  <i class="fas fa-hashtag"></i>
+                  animallover
+                </a>
+                <a href="#" class="recommed2">
+                  <i class="fas fa-hashtag"></i>
+                  Cake
+                </a>
+              </p>
+              <div class="textmusic">
+                <a href="#" class="recommed3">
+                  <i class="fas fa-music"></i>
+                  Muonroimasaocon
+                </a>
+              </div>
+            </div>
+            <button class="follow__btn">Follow</button>
+          </div>
+          <div class="post__body">
+            <div class="clip">
+              <video width="300" height="500" autoplay>
+                <source src="anhimg/gifs/gif-1.mp4" />
+              </video>
+            </div>
+            <div class="actions">
+              <div class="action__icon">
+                <i class="fas fa-heart"></i>
+              </div>
+              <div class="text3post">
+                <p><strong class="text3so">12345</strong></p>
+              </div>
+              <div class="action__icon">
+                <i class="fas fa-comment"></i>
+              </div>
+
+              <div class="text3post">
+                <p><strong class="text3so">12345</strong></p>
+              </div>
+              <div class="action__icon">
+                <i class="fas fa-share"></i>
+              </div>
+
+              <div class="text3post">
+                <p><strong class="text3so">12345</strong></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="post">
+          <div class="post__top">
+            <div
+              class="post__pic"
+              style="background-image: url(anhimg/anhtiktok/photo-2.jpg)"
+            ></div>
+            <div class="post__info">
+              <h2>nguoidung1 <small>ddautien</small></h2>
+              <p>
+                Cam on ban da ho tro .
+                <a href="#" class="recommed2">
+                  <i class="fas fa-hashtag"></i>
+                  animallover
+                </a>
+                <a href="#" class="recommed2">
+                  <i class="fas fa-hashtag"></i>
+                  Cake
+                </a>
+              </p>
+              <div class="textmusic">
+                <a href="#" class="recommed3">
+                  <i class="fas fa-music"></i>
+                  Muonroimasaocon
+                </a>
+              </div>
+            </div>
+            <button class="follow__btn">Follow</button>
+          </div>
+          <div class="post__body">
+            <div class="clip">
+              <video width="300" height="500" autoplay>
+                <source src="anhimg/gifs/gif-2.mp4" />
+              </video>
+            </div>
+            <div class="actions">
+              <div class="action__icon">
+                <i class="fas fa-heart"></i>
+              </div>
+              <div class="text3post">
+                <p><strong class="text3so">12345</strong></p>
+              </div>
+              <div class="action__icon">
+                <i class="fas fa-comment"></i>
+              </div>
+
+              <div class="text3post">
+                <p><strong class="text3so">12345</strong></p>
+              </div>
+              <div class="action__icon">
+                <i class="fas fa-share"></i>
+              </div>
+
+              <div class="text3post">
+                <p><strong class="text3so">12345</strong></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="post">
+          <div class="post__top">
+            <div
+              class="post__pic"
+              style="background-image: url(anhimg/anhtiktok/photo-3.jpg)"
+            ></div>
+            <div class="post__info">
+              <h2>nguoidung1 <small>ddautien</small></h2>
+              <p>
+                Cam on ban da ho tro .
+                <a href="#" class="recommed2">
+                  <i class="fas fa-hashtag"></i>
+                  animallover
+                </a>
+                <a href="#" class="recommed2">
+                  <i class="fas fa-hashtag"></i>
+                  Cake
+                </a>
+              </p>
+              <div class="textmusic">
+                <a href="#" class="recommed3">
+                  <i class="fas fa-music"></i>
+                  Muonroimasaocon
+                </a>
+              </div>
+            </div>
+            <button class="follow__btn">Follow</button>
+          </div>
+          <div class="post__body">
+            <div class="clip">
+              <video width="300" height="500" autoplay>
+                <source src="anhimg/gifs/gif-3.mp4" />
+              </video>
+            </div>
+            <div class="actions">
+              <div class="action__icon">
+                <i class="fas fa-heart"></i>
+              </div>
+              <div class="text3post">
+                <p><strong class="text3so">12345</strong></p>
+              </div>
+              <div class="action__icon">
+                <i class="fas fa-comment"></i>
+              </div>
+
+              <div class="text3post">
+                <p><strong class="text3so">12345</strong></p>
+              </div>
+              <div class="action__icon">
+                <i class="fas fa-share"></i>
+              </div>
+
+              <div class="text3post">
+                <p><strong class="text3so">12345</strong></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end rong ben phai  -->
+    </div>
+    <!-- end -->
+    <!-- <script src="js/tiktok.js"></script> -->
+  </body>
+</html>
